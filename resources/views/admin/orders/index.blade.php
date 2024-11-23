@@ -110,9 +110,15 @@
         }
 
         @media only screen and (max-width: 767px) {
+
+            main{
+                padding: 0 !important;
+            }
             .wrapper {
                 height: 95vh;
                 overflow: auto;
+                font-size: smaller;
+                padding: 0 !important;
             }
 
             .mobile-pagination {

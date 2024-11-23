@@ -26,7 +26,7 @@
                             @endif
                         </div>
 
-                        <div class="col-12 col-xl-6  text-white text-xl-start text-center">
+                        <div class="col-12 col-xl-6  text-white text-xl-start text-center my_infoRest">
                             <p class="my_cardStandardField">Nome: {{ $restaurant->name }}</p>
                             <p class="my_cardStandardField">Indirizzo del ristorante: {{ $restaurant->address }}</p>
                             <p class="my_cardStandardField">Numero di telefono: {{ $restaurant->phone }}</p>
@@ -42,18 +42,33 @@
     </div>
 
     <style>
-        @media only screen and (min-width: 768px) and (max-width: 1200px) {
-            .wrapper {
-                height: 95vh;
-                overflow: auto;
-            }
+    main{
+        padding-right: 0 !important; 
+        padding-left: 0 !important; 
+        margin-bottom: 0 !important;
+    } 
+
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        .wrapper {
+            height: 95vh;
+            overflow: auto;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .wrapper {
+            height: 95vh;
+            overflow: auto;
         }
 
-        @media only screen and (max-width: 767px) {
-            .wrapper {
-                height: 95vh;
-                overflow: auto;
-            }
+        .my_cardBody{
+            height: 75vh !important;
         }
+        .my_infoRest{
+            font-size: smaller !important;
+        }
+
+
+    }
     </style>
 @endsection

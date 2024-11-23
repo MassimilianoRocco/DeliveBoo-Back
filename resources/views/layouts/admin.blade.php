@@ -72,7 +72,7 @@
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.products.index' ? 'bg-secondary' : '' }}"
                                     href="{{ route('admin.products.index') }}">
                                     <i class="fa-solid fa-burger fa-lg fa-fw"></i> <span
-                                        class="d-lg-none d-xl-inline">Menù del ristorante</span>
+                                        class="d-lg-none d-xl-inline">Menù ristorante</span>
                                 </a>
                             </li>
 
@@ -116,7 +116,7 @@
 
 
                 <div class="row p-0 m-0">
-                    <ul class="navbar-bottom justify-content-around  col-12 d-lg-none d-flex ">
+                    <ul class="navbar-bottom justify-content-around  col-12 d-lg-none d-flex my_nav">
                         <li>
                             {{-- <a clbot_item ass="nav-link text-white {{ Route::currentRouteName() == 'http://localhost:5173' ? 'bg-secondary' : '' }}" --}}
                             <a class="nav-link text-white {{ Route::currentRouteName() == 'http://localhost:5173' ? 'bg-secondary' : '' }}"
@@ -203,6 +203,13 @@
             bottom: 0;
             padding: 1rem;
             z-index: 3;
+        }
+
+        .my_nav{
+
+        i{
+            margin: 0 !important;
+         }
         }
     }
 </style>

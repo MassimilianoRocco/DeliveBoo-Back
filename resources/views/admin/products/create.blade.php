@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 id="prova"></h1>
-    <div class="container mt-5">
+    <div class="container mt-5 my_container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -163,5 +163,27 @@
             background-color: green;
             border-color: green;
         }
+
+
+
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+            .wrapper {
+                height: 95vh;
+                overflow: auto;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            main{
+                height: 100vh;
+                padding-bottom: 2rem !important;
+                overflow: auto;
+            }
+            .my_container{
+                margin-bottom: 2rem !important;
+            }
+        }
+
     </style>
 @endsection

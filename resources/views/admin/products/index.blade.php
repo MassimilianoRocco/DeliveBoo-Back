@@ -9,7 +9,7 @@
         <div class="row align-items-center justify-content-between pe-3 ">
             {{-- <p class="col-auto m-0">Totale prodotti: {{ count($total_products) }}</p> --}}
             <h1 class="col-auto my-4 text-center">TOTALE PRODOTTI : {{ count($total_products) }}</h1>
-            <a class="col-auto btn btn-success" href="{{ route('admin.products.create') }}">Crea Prodotto</a>
+            <a class="col-auto btn btn-success mb-2 ms-2" href="{{ route('admin.products.create') }}">Crea Prodotto</a>
 
         </div>
 
